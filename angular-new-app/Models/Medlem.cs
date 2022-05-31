@@ -6,7 +6,7 @@ namespace angular_new_app.Models
 {
     public partial class Medlem
     {
-		[Key]
+        [Key]
         public Guid Medlem_Id { get; set; }      
 		public string Fornavn { get; set; }
         public string Etternavn { get; set; }
