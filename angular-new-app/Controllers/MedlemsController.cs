@@ -37,14 +37,14 @@ namespace angular_new_app.Controllers
             return Ok(medlem);
         }
 		 
-		[HttpPost]
+	[HttpPost]
         public async Task<ActionResult<Medlem>> Post(Medlem medlem)
         {
             await _medlemService.CreateMedlem(medlem);
             return CreatedAtAction("Post", new { id = medlem.Medlem_Id }, medlem);
         }
 
-		[HttpPut("{id}")]
+	[HttpPut("{id}")]
         public async Task<IActionResult> Put(Guid id, Medlem medlem)
         {
             if (id != medlem.Medlem_Id)
@@ -55,7 +55,7 @@ namespace angular_new_app.Controllers
             return NoContent();
         }
 
-		[HttpDelete("{id}")]
+	[HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             if (id == null)
