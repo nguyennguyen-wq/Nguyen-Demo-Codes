@@ -20,29 +20,29 @@ namespace angular_new_app.Services
         {
             return await _context.Medlems
                .Include(x => x.Kontingent)
-			    .OrderBy(x => x.Fornavn )
-                .ToListAsync();
+	       .OrderBy(x => x.Fornavn )
+               .ToListAsync();
         }
 		
         public async Task<Medlem> GetMedlemById(Guid id)
         {
             return await _context.Medlems
                 .Include(x => x.Kontingent)
-				.FirstOrDefaultAsync(x => x.Medlem_Id == id);
+		.FirstOrDefaultAsync(x => x.Medlem_Id == id);
         }
 		
         public async Task<Medlem> GetMedlemByEtternavn(string etternavn)
         {
             return await _context.Medlems
                 .Include(x => x.Kontingent)
-				.FirstOrDefaultAsync(x => x.Etternavn == etternavn);
+		.FirstOrDefaultAsync(x => x.Etternavn == etternavn);
         }
  		
         public async Task<Medlem> GetMedlemByFornavn(string fornavn)
         {
             return await _context.Medlems
                 .Include(x => x.Kontingent)
-				.FirstOrDefaultAsync(x => x.Fornavn == fornavn);
+		.FirstOrDefaultAsync(x => x.Fornavn == fornavn);
         }
 
         public async Task<Medlem> CreateMedlem(Medlem medlem)
