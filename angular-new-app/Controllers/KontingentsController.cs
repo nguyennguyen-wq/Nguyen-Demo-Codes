@@ -14,7 +14,7 @@ namespace angular_new_app.Controllers
     [Route("api/[controller]")]
     public class KontingentsController : ControllerBase
     {
-		private readonly IKontingentsService _kontingentService;
+	private readonly IKontingentsService _kontingentService;
         public KontingentsController(IKontingentsService kontingentService)
         {
             _kontingentService = kontingentService;
