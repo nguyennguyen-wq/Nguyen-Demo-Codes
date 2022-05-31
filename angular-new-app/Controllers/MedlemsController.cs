@@ -20,7 +20,7 @@ namespace angular_new_app.Controllers
             _medlemService = medlemService;
         }
         
-		[HttpGet]
+	[HttpGet]
         public async Task<IEnumerable<Medlem>> Get()
         {
             return await _medlemService.GetMedlemsList();
