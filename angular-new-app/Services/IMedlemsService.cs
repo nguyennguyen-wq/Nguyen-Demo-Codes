@@ -11,8 +11,8 @@ namespace  angular_new_app.Services
     {
         Task<IEnumerable<Medlem>> GetMedlemsList();
         Task<Medlem> GetMedlemById(Guid id);
-		Task<Medlem> GetMedlemByEtternavn(string etternavn);
-		Task<Medlem> GetMedlemByFornavn(string fornavn); 
+	Task<Medlem> GetMedlemByEtternavn(string etternavn);
+	Task<Medlem> GetMedlemByFornavn(string fornavn); 
         Task<Medlem> CreateMedlem(Medlem medlem);
         Task UpdateMedlem(Medlem medlem);
         Task DeleteMedlem(Medlem medlem);
