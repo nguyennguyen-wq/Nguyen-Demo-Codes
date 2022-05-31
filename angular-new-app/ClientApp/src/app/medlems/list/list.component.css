@@ -1,0 +1,58 @@
+
+@media (min-width: 600px)  and (max-width: 990px)  {
+.containertop{
+  width: 88%;
+  padding-left: none;
+}
+.container{
+  width: 80%;
+  padding-left: none;
+}
+#sok
+{
+  width:26px;height:19px;
+}
+#mnavn 
+{
+  width:250px;		
+}
+}
+@media (min-width: 991px)    
+{
+  #pagi  td {    
+  width: 100%;
+  text-align: center;
+  color: blue;  
+}
+#pagi {  
+  width: 100%;  	
+}   
+.containertop{
+   width: 88%;
+   padding-left: none;
+}
+.container{
+   width: 80%;
+   padding-left: none;
+}
+.containerbottom
+ {
+  width: 100%;
+  padding-left: none;
+}
+#sok 
+{
+   width:26px;height:19px;
+}
+#mnavn 
+{
+   width:250px;
+}
+.column-one 
+{
+  width: 4%;
+}
+.column-two {
+  width: 20%;
+}
+	 
