@@ -21,12 +21,12 @@ namespace angular_new_app.Data
         public virtual DbSet<Medlem> Medlems { get; set; }			
         public virtual DbSet<Kontingent> Kontingents { get; set; }
         		
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
         {	
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
             modelBuilder.Entity<Medlem>(entity =>
             {	
-			modelBuilder.Entity<Medlem>()
+	    modelBuilder.Entity<Medlem>()
             .HasOne<Kontingent>(s => s.Kontingent)
             .WithMany(g => g.Medlems)
             .HasForeignKey(s => s.CurrentKontintId);	
